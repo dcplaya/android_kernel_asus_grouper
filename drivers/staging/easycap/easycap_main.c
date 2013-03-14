@@ -3620,6 +3620,7 @@ static int easycap_usb_probe(struct usb_interface *intf,
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 			pdata_urb = kzalloc(sizeof(struct data_urb), GFP_KERNEL);
 			if (!pdata_urb) {
+				usb_free_urb(purb);  //Added from https://patchwork.kernel.org/patch/1231631/ 
 				SAM("ERROR: Could not allocate struct data_urb.\n");
 				return -ENOMEM;
 			} else
