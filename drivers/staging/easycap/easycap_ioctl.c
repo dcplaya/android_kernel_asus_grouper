@@ -1110,7 +1110,10 @@ long easycap_unlocked_ioctl(struct file *file,
 			v4l2_input.std = V4L2_STD_PAL |
 					V4L2_STD_SECAM |
 					V4L2_STD_NTSC ;
-			v4l2_input.status = 0;
+			//v4l2_input.status = 0;
+                        //Replacing with line below for auto-switching to work
+                        //correctly
+                        v4l2_input.status = peasycap->lost[0];
 			JOM(8, "%i=index: %s\n", index, &v4l2_input.name[0]);
 			break;
 		}
