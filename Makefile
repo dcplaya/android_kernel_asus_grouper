@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 1
 SUBLEVEL = 10
-EXTRAVERSION = 
+EXTRAVERSION = -gfcf72bf-dirty 
 NAME = "Divemaster Edition"
 
 # *DOCUMENTATION*
