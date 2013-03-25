@@ -1,7 +1,11 @@
 VERSION = 3
 PATCHLEVEL = 1
 SUBLEVEL = 10
+<<<<<<< HEAD
 EXTRAVERSION = -gfcf72bf-dirty 
+=======
+EXTRAVERSION = 3.1.10-gfcf72bf-dirty
+>>>>>>> 8dac9692c6d72e83945c64013418f3ba3956cdc3
 NAME = "Divemaster Edition"
 
 # *DOCUMENTATION*
@@ -377,8 +381,7 @@ KBUILD_CFLAGS_MODULE  := -DMODULE
 KBUILD_LDFLAGS_MODULE := -T $(srctree)/scripts/module-common.lds
 
 # Read KERNELRELEASE from include/config/kernel.release (if it exists)
-KERNELRELEASE = "3.1.10-gfcf72bf-dirty"
-#KERNELRELEASE = $(shell cat include/config/kernel.release 2> /dev/null)
+KERNELRELEASE = $(shell cat include/config/kernel.release 2> /dev/null)
 KERNELVERSION = $(VERSION)$(if $(PATCHLEVEL),.$(PATCHLEVEL)$(if $(SUBLEVEL),.$(SUBLEVEL)))$(EXTRAVERSION)
 
 export VERSION PATCHLEVEL SUBLEVEL KERNELRELEASE KERNELVERSION
