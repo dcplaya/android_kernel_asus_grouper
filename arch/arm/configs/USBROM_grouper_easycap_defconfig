@@ -1916,6 +1916,7 @@ CONFIG_VIDEO_V4L2_COMMON=y
 # CONFIG_DVB_CORE is not set
 CONFIG_VIDEO_MEDIA=y
 
+
 #
 # Multimedia drivers
 #
