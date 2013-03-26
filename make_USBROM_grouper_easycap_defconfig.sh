@@ -3,5 +3,5 @@
 
 ./arm_setup.sh
 make clean
-make USBROM_grouper_easycap_defconfig
+make arch/arm/configs/USBROM_grouper_easycap_defconfig
 
